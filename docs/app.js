@@ -30,7 +30,6 @@ const powerCard = `<div class="flex flex-col px-6 py-4 m-4 rounded-lg shadow-lg"
             getRandom(items, powPerPlayer).forEach(
                 (i) => (card += `<span class="mt-1.5"> - ${i}</span>`)
             );
-            console.log(card);
             abilHTML += card + "</div>";
         });
         (abilHTML.match(/\{\d\}/g) || []).forEach(
