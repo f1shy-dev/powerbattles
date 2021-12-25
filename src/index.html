@@ -15,7 +15,7 @@
         <h3 class="m-4 mt-8 text-2xl font-bold">Power Battles</h3>
         <div class="flex flex-col px-6 py-4 m-4 rounded-lg shadow-lg">
             <span class="text-slate-700 text-xs uppercase">Config</span>
-            <div class="flex items-center gap-4 mt-2">
+            <div class="md:flex-row md:items-center md:gap-4 flex flex-col gap-2 mt-2">
                 <div class="flex">
                     <p>Number of players:</p>
                     <input type="number" class="players border-slate-200 hover:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 w-16 px-2 ml-2 transition border-2 rounded-lg" min="2" value="2" max="50" />
@@ -24,7 +24,7 @@
                     <p>Powers per player:</p>
                     <input type="number" class="pow border-slate-200 hover:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 w-16 px-2 ml-2 transition border-2 rounded-lg" min="1" value="2" max="5" />
                 </div>
-                <div class="flex-grow"></div>
+                <div class="md:flex-grow"></div>
                 <button class="gen hover:bg-blue-400 rounded-2xl focus:outline-none focus:ring focus:ring-blue-300 px-4 py-1 font-semibold text-white transition bg-blue-500">
             Generate
           </button>
