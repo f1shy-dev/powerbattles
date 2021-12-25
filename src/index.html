@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="dist.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="max-w-4xl mx-auto">
+        <h3 class="m-4 mt-8 text-2xl font-bold">Power Battles</h3>
+        <div class="flex flex-col px-6 py-4 m-4 rounded-lg shadow-lg">
+            <span class="text-slate-700 text-xs uppercase">Config</span>
+            <div class="flex items-center gap-4 mt-2">
+                <div class="flex">
+                    <p>Number of players:</p>
+                    <input type="number" class="players border-slate-200 hover:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 w-16 px-2 ml-2 transition border-2 rounded-lg" min="2" value="2" max="50" />
+                </div>
+                <div class="flex">
+                    <p>Powers per player:</p>
+                    <input type="number" class="pow border-slate-200 hover:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 w-16 px-2 ml-2 transition border-2 rounded-lg" min="1" value="2" max="5" />
+                </div>
+                <div class="flex-grow"></div>
+                <button class="gen hover:bg-blue-400 rounded-2xl focus:outline-none focus:ring focus:ring-blue-300 px-4 py-1 font-semibold text-white transition bg-blue-500">
+            Generate
+          </button>
+            </div>
+        </div>
+        <div class="abilities"></div>
+        <script src="https://raw.githubusercontent.com/lodash/lodash/4.17.15-npm/core.min.js"></script>
+        <script src="app.js"></script>
+    </div>
+</body>
+
+</html>
