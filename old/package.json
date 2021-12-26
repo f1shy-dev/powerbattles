@@ -1,0 +1,22 @@
+{
+    "name": "static",
+    "version": "1.0.0",
+    "description": "This is a static template with no bundling",
+    "main": "index.html",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/f1shy-dev/powerbattles.git"
+    },
+    "scripts": {
+        "dev:twcss": "tailwindcss -i src/index.css -o src/dist.css -c tailwind.config.js --watch",
+        "dev:serve": "serve src/",
+        "dev": "run-p dev:*",
+        "build": "cp -r src/* docs && rm -rf docs/index.css"
+    },
+    "devDependencies": {
+        "npm-run-all": "^4.1.5",
+        "prettier-plugin-tailwind-css": "^1.5.0",
+        "serve": "^11.2.0",
+        "tailwindcss": "^3.0.7"
+    }
+}

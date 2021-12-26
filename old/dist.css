@@ -477,28 +477,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 4rem;
 }
 
-.w-64 {
-  width: 16rem;
-}
-
 .max-w-4xl {
   max-width: 56rem;
 }
 
-.flex-grow {
-  flex-grow: 1;
-}
-
 .flex-col {
   flex-direction: column;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .gap-2 {
